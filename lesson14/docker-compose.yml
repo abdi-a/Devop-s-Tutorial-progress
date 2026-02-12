@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  # Service 1: Our Web App
+  web:
+    image: nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
+
+  # Service 2: A Database (Just for example)
+  database:
+    image: redis
+    # We don't need to expose ports if only 'web' talks to it
+    # But for testing, let's expose it
+    ports:
+      - "6379:6379"
