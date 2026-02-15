@@ -5,4 +5,8 @@ app.get('/', (req, res) => {
   res.send('Hello GitHub Actions!');
 });
 
-module.exports = app; // Export for testing
+const server = app.listen(3000, () => {
+    console.log('App running on port 3000');
+});
+
+module.exports = server;
