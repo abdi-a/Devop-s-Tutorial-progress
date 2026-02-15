@@ -46,4 +46,4 @@ jobs:
           context: ./lesson19
           push: true
           # Replace 'your-dockerhub-username' with your actual username in the next step
-          tags: ${{ secrets.DOCKER_USERNAME }}/lesson19-app:latest
+          tags: abdisaa/lesson19-app:latest
