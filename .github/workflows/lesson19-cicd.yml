@@ -45,5 +45,5 @@ jobs:
         with:
           context: ./lesson19
           push: true
-          # Replace 'your-dockerhub-username' with your actual username in the next step
-          tags: abdisaa/lesson19-app:latest
+          # Hardcoded username to fix previous error
+          tags: abdisaa/lesson19-app:v1
